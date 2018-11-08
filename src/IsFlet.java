@@ -8,9 +8,9 @@ public class IsFlet {
 
     public static boolean isAFlet(char[] X, char[] Y, char[] Z) { //Checks if you can create Z by merging the words X and Y
 
-        int n = Y.length-1;
-        int m = X.length-1;
-        boolean F[][] = new boolean[m][n];
+        int n = Y.length;
+        int m = X.length;
+        boolean F[][] = new boolean[m+1][n+1];
 
         F[0][0] = true; //Two empty strings are equal
         for(int j = 0; j < n; j++) {
